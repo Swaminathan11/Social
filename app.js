@@ -1,7 +1,7 @@
 const express= require('express')
 const app = express()
 const mongoose = require('mongoose')
-const PORT = process.env.PORT||5000
+const PORT_NAME = process.env.PORT||5000
 const {MONGOURI} = require('./config/keys')
 
 //mA18CAARr3u5hVNC
@@ -35,4 +35,4 @@ if(process.env.NODE_ENV=="production"){               //if deployed then serve s
     })
 }                    
 
-app.listen(PORT)
+app.listen(PORT_NAME)
